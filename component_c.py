@@ -1,11 +1,8 @@
-from component import Component
-
-
-class componentC(Component):
+class componentC:
     def __init__(self, root) -> None:
-        super().__init__(root)
+        self.root = root
 
     def quack(self, input):
         for _ in range(1000):
-            print(f"¨{__name__}: {self.current_timestamp}")
+            print(f"¨{__name__}: {self.root.current_timestamp}")
         return input
