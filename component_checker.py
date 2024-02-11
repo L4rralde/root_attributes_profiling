@@ -17,7 +17,7 @@ class Checker:
         input = self.component_a.quack(input)
         input = self.component_b.quack(input)
         input = self.component_c.quack(input)
-        input = self.component_c.quack(input)
+        input = self.component_d.quack(input)
 
         return input
 
