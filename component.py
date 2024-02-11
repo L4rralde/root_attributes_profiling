@@ -2,5 +2,6 @@ class Component:
     def __init__(self, root) -> None:
         self._root = root
 
-    def __getattr__(self, attr):
-        return getattr(self._root, attr)
+    @property
+    def current_timestamp(self):
+        return self._root.current_timestamp
