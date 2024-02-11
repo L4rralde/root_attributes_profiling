@@ -7,8 +7,6 @@ from component_d import componentD
 class Checker:
     def __init__(self) -> None:
         self.current_timestamp: int = None
-        self._eventa_tiemstamp: int = None
-        self._eventb_timestamp: int = None
 
         self.component_a = componentA(self)
         self.component_b = componentB(self)
