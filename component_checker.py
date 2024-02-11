@@ -6,12 +6,24 @@ from component_d import componentD
 
 class Checker:
     def __init__(self) -> None:
-        self.current_timestamp: int = None
+        self._current_timestamp: int = None
 
-        self.component_a = componentA(self)
-        self.component_b = componentB(self)
-        self.component_c = componentC(self)
-        self.component_d = componentD(self)
+        self.component_a = componentA()
+        self.component_b = componentB()
+        self.component_c = componentC()
+        self.component_d = componentD()
+
+    @property
+    def current_timestamp(self):
+        return self._current_timestamp
+
+    @current_timestamp.setter
+    def current_timestamp(self, time):
+        self._current_timestamp = time
+        self.component_a.current_timestamp = time
+        self.component_b.current_timestamp = time
+        self.component_c.current_timestamp = time
+        self.component_d.current_timestamp = time
 
     def quack(self, input):
         input = self.component_a.quack(input)

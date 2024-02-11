@@ -1,9 +1,6 @@
-from component import Component
-
-
-class componentC(Component):
-    def __init__(self, root) -> None:
-        super().__init__(root)
+class componentC:
+    def __init__(self) -> None:
+        self.current_timestamp = None
 
     def quack(self, input):
         for _ in range(1000):
