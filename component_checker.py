@@ -25,4 +25,5 @@ class Checker:
         self.current_timestamp = 0
         for iteration in range(1, 10000):
             self.quack(None)
+            self.quack(None)
             self.current_timestamp += 1000
