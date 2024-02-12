@@ -1,0 +1,22 @@
+15494958 function calls in 40.499 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.008    0.008   40.499   40.499 component_checker.py:36(spin)
+     4990    0.028    0.000   40.490    0.008 component_checker.py:28(quack)
+ 15469000   35.357    0.000   35.357    0.000 {built-in method builtins.print}
+     4990    1.644    0.000   13.784    0.003 component_b.py:5(quack)
+     4990    1.646    0.000   13.039    0.003 component_c.py:5(quack)
+     4990    1.643    0.000   12.438    0.002 component_d.py:5(quack)
+     4990    0.171    0.000    1.200    0.000 component_a.py:5(quack)
+      500    0.001    0.000    0.001    0.000 component_checker.py:20(current_timestamp)
+        1    0.000    0.000    0.000    0.000 pstats.py:108(__init__)
+      499    0.000    0.000    0.000    0.000 component_checker.py:16(current_timestamp)
+        1    0.000    0.000    0.000    0.000 pstats.py:118(init)
+        1    0.000    0.000    0.000    0.000 pstats.py:137(load_stats)
+        1    0.000    0.000    0.000    0.000 cProfile.py:50(create_stats)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
