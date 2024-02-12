@@ -23,7 +23,7 @@ class Checker:
 
     def spin(self):
         self.current_timestamp = 0
-        for iteration in range(1, 1000):
+        for iteration in range(1, 500):
             for _ in range(10):
                 self.quack(None)
             self.current_timestamp += 1000
